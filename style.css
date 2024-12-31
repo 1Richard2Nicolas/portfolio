@@ -1,0 +1,1359 @@
+@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=VT323&family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Orbitron:wght@400..900&family=Syne+Mono&family=VT323&family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Julius+Sans+One&family=Orbitron:wght@400..900&family=Syne+Mono&family=VT323&family=Wallpoet&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #131313;
+  --text-color: white;
+  --main-color: #FB7E1B;
+  --font-detalhes: "VT323", monospace;
+  --font-segundodetalhes: "Atomic Age", system-ui;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg-color); 
+  color: var(--text-color); 
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* overflow: hidden; */
+  /* width: 100%;
+        height: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  display: flex; /* Organiza os itens (links) em linha usando flexbox */
+  justify-content: end; /* Alinha os links ao final (direita) do contêiner */
+  padding-right: 0%; /* Adiciona espaçamento à direita da barra */
+}
+
+.navbar .logo {
+  margin-right: auto; /* Move a logo para a extrema esquerda */
+}
+
+.logo-img {
+  width: 60px; /* Define a largura da logo */
+  height: auto; /* Mantém a proporção */
+  cursor: pointer; /* Adiciona o cursor de "mãozinha" */
+}
+
+.navbar .logo img {
+  border: none !important;
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#particles-js {
+  position: absolute; */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -100;
+  top:0;
+  left:0;
+}
+  /* width: 100%;
+  height: 100%;
+  display: table; 
+  position: absolute;
+  box-sizing: 100%; */ */
+  /* overflow: hidden; */
+  /* z-index: -1; */
+  /* top: 0;
+  left: 0; */
+  /* background-size: cover;  */
+  /* background-position: 100% 100%;  */
+/* } */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem 12% 4rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "VT323", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.4s ease;
+  text-shadow: #FB7E1B 0.1em 0.3em;
+  padding-left: -0%;
+  padding-top: 2%;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo span {
+  text-shadow: 0 0 25px var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilização da barra de navegação */
+.navbar {
+  display: flex; /* Organiza os itens (links) em linha usando flexbox */
+  justify-content: end; /* Alinha os links ao final (direita) do contêiner */
+  padding-right: 2%; /* Adiciona espaçamento à direita da barra */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  /* background: rgba(0, 0.1, 0.2, 0.3); */ /* Fundo translúcido removido */
+}
+
+/* Estilização da logo dentro da barra de navegação */
+.navbar .logo {
+  margin-right: auto; /* Move a logo para o início (esquerda) da barra */
+  border: none;
+  border-bottom: none;
+}
+.navbar .logo img {
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Estilização dos links dentro da barra de navegação */
+.navbar a {
+  font-family: "VT323", monospace; /* Define a fonte usada nos links */
+  font-style: normal; /* Define o estilo da fonte como normal */
+  font-weight: 400; /* Define o peso da fonte como regular */
+  font-size: 3rem; /* Define o tamanho da fonte */
+  color: var(--text-color); /* Aplica a cor do texto definida como variável */
+  margin-left: 4rem; /* Adiciona espaçamento entre os links */
+  transition: 0.3s ease; /* Adiciona uma transição suave para mudanças de estilo */
+  border-bottom: 1px solid transparent; /* Cria uma borda inferior invisível para o efeito de destaque */
+}
+
+/* Remove completamente a borda ou estilos aplicados à logo */
+.navbar .logo img {
+  border: none !important; /* Remove bordas */
+  border-bottom: none !important; /* Garante a remoção da borda inferior */
+  margin-bottom: 0 !important; /* Elimina margens inferiores */
+  padding-bottom: 0 !important; /* Elimina qualquer padding inferior */
+  box-shadow: none !important; /* Remove sombras que podem parecer bordas */
+  display: inline-block; /* Garante que o comportamento seja consistente */
+  outline: none !important; /* Remove qualquer contorno */
+  background: transparent !important; /* Remove qualquer fundo que possa simular uma linha */
+}
+
+/* Estilo ao passar o mouse (hover) ou no link ativo */
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color); /* Altera a cor do texto para a cor principal */
+  border-bottom: 3px solid var(--main-color); /* Mostra a borda inferior com a cor principal */
+}
+
+/* Certifique-se de que apenas os links recebam a borda inferior */
+.navbar a:not(.logo):hover,
+.navbar a:not(.logo).active {
+  border-bottom: 3px solid var(--main-color); /* Aplica borda apenas aos links */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+.home {
+  /* width: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(0, 0.1, 0.2, 0.3); */ /* Fundo translúcido removido */
+}
+.home-content {
+  font-family: "Bahnschrift", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: -11rem; 
+  padding-left: 3%; 
+}
+
+
+span {
+  color: var(--main-color);
+}
+.logo span {
+  color: var(--main-color);
+}
+.home-content h3 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+}
+.home-content h3 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+}
+.home-content h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.home-img {
+  border-radius: 0%;
+  padding-right: 6%;
+  padding-bottom: 14%;
+}
+
+.home-img img {
+  position: relative;
+  top: 3rem;
+  width: 35vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.home-img img:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+.home-content p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
+}
+.social-icons a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease-in-out;
+}
+.social-icons a:hover {
+  color: var(--text-color);
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: black;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--main-color);
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.btn-group a:nth-of-type(2) {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2):hover {
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+.text-animation span {
+  position: relative;
+}
+.text-animation span::before {
+  content: "Web Developer";
+  color: var(--main-color);
+  animation: words 20s infinite;
+}
+.text-animation span::after {
+  content: "";
+  background-color: var(--bg-color);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--bg-color);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid var(--main-color);
+  }
+}
+@keyframes words {
+  0%,
+  20% {
+    content: " WEB DEVELOPER ";
+  }
+  21%,
+  40% {
+    content: " WEB DESIGNER ";
+  }
+  41%,
+  60% {
+    content: " FULL-STACK DEVELOPER ";
+  }
+  61%,
+  80% {
+    content: " PRODUCT OWNER ";
+  }
+  81%,
+  100% {
+    content: " TECH ENTHUSIAST ";
+  }
+}
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+/* educação */
+
+.education {
+  padding: 0 15px; /* Adiciona um espaçamento interno horizontal de 15px, mantendo o topo e a base sem espaçamento. */
+  /* background: rgba(0, 0.1, 0.2, 0.3); */ /* Fundo translúcido removido */
+  position: relative; /* Define a posição como relativa, permitindo posicionamento de elementos filhos com base nesse elemento. */
+  display: flex; /* Alinha os filhos em uma estrutura flexível para fácil organização. */
+  width: 100%; /* Define a largura como 100% do elemento pai. */
+}
+
+.education .heading {
+  font-family: var(--font-detalhes); /* Usa a fonte definida na variável CSS `--font-detalhes`. */
+  font-size: 8rem; /* Define o tamanho da fonte como 8rem, ajustável proporcionalmente ao tamanho base do documento. */
+  text-align: center; /* Alinha o texto ao centro horizontalmente dentro do elemento. */
+  margin: 5rem 0; /* Adiciona uma margem de 5rem no topo e na base, sem margens laterais. */
+  position: relative; /* Define a posição como relativa, permitindo ajustes de posicionamento em relação ao layout padrão. */
+  display: flex; /* Exibe o conteúdo dentro do `.heading` como um contêiner flexível. */
+  width: auto; /* Define a largura automática, ajustando-se ao conteúdo. */
+}
+
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 35s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+/*@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+} */
+
+/* Resources */
+
+.heading h2 {
+  /* margin-bottom: 5rem; */
+  font-family: "VT323", monospace;
+  
+}
+.timeline-items {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: calc(50% - 1px);
+}
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(2n-1) { /* Ímpares */
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(2n) { /* Pares */
+  padding-left: calc(50% + 30px);
+  text-align: left;
+}
+.timeline-dot {
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+.timeline-date {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-color);
+  margin: 6px 0 15px;
+}
+.timeline-content {
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.timeline-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+.timeline-content h3 {
+  font-size: 20px;
+  color: var(--text-color);
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+.timeline-content p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+  width: 50px;
+}
+/* fim dos estilos educacion */
+
+/* inicio dos estilos jobs */
+.services .heading h2 {
+  /* background-image: url(./img/gifservicos.gif); */
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+ 
+}
+.services h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 6rem;
+  font-family: var(--font-detalhes);
+align-items: center;
+margin-left: 44%;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3.5rem;
+}
+.services-box {
+  background-color: #FB7E1B;
+  height: 300px;
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  margin-top: 15px;
+  /* overflow: hidden; */
+ 
+}
+.services-box:hover {
+  background-image: url(./img/gifservicos.gif);
+  color: var(--bg-color);
+  border: 5px solid #49314667;
+  /* transform: scale(2.2); */
+  transition: 1.4s;
+  color: #ffffffb6;
+}
+.services-box .services-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 100vh;
+  justify-content: left;
+  align-items: baseline;
+  padding: 1rem 5rem;
+  /* overflow: hidden; */
+  max-width: 100vw;
+  
+}
+.services-info h4 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
+  font-family: var(--font-detalhes);
+  color: #FB7E1B;
+  overflow: hidden;
+
+}
+
+.services-info p {
+  position:relative;
+  font-size: 2rem;
+  font-weight: 600;
+  /* max-height: 200px; */
+  line-height: 1;
+  margin: auto;
+  display: flex;
+font-family: var(--text-color);
+}
+
+/* .services-container .services-box{
+   animation: appear 1ms ease-in-out;
+   animation-timeline: view();
+   animation-range: cover 0% cover 50%;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+} */
+
+
+
+
+
+
+
+/* fim da estilização dos jobs */
+/* inicio da estilização dos projetos */
+.projetos {
+  /* background-image: url(./img/gifservicos.gif); */
+    background-position-x: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+   
+}
+.projetos-box {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.projetos .heading {
+padding: 20px;
+margin-top: 8%;
+  font-size: 6rem;
+  font-family: var(--font-detalhes);
+  align-items: center;
+}
+
+.projetos-box img {
+  width: 25rem;
+  overflow: hidden;
+  /* border-radius: 50%; */
+  /* border: 3px solid var(--main-color); */
+  box-shadow: 0 0 25px var(--main-color);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.projetos-item {
+  min-height: 550px;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 3px solid rgba(238, 238, 238, 0.2);
+  border-radius: 2rem;
+  margin: 0 2rem;
+  padding: 30px 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: var(--text-color);
+  transition: 0.4s ease-in-out;
+}
+.projetos-item:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 50px var(--main-color);
+}
+.projetos-item {
+  font-size: 2.5rem;
+  font-family: var(--font-detalhes);
+}
+.projetos-item p {
+  font-size: 1.8rem;
+  font-family: var(--text-color);
+}
+/* final da estilização dos projetos */
+
+/* inicio das estilizações dos contatos */
+
+.contact {
+padding-top: 10%;
+  backdrop-filter:var(--second-bg-color);
+  box-shadow: #080808;
+  background-color: rgba(0, 0, 0, 0.3);
+ background-position-Y: 55px;
+ display: flex;
+ position: relative;
+
+}
+
+.contact h2 {
+ 
+  color: var(--text-color);
+  font-size: 6rem;
+  font-family: var(--font-detalhes);
+  align-items: center;
+  padding-left: 2%;
+  padding-top: 2%;
+
+}
+
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+input.bnt{
+    font-size: 15px;
+    color: #FB7E1B;
+    border-radius: 10%;
+    border-color:  #FB7E1B;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border:5rem;
+    cursor: pointer;
+    background-color: #131313;
+    border: #FB7E1B;
+}
+
+input.bnt:hover{
+    color:#080808;
+    background-color: #FB7E1B;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.5rem 0;
+  resize: none;
+}
+.contact form .btn {
+  margin-top: 2rem;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--second-bg-color);
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--main-color);
+}
+.footer .social a {
+  font-size: 25px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li a {
+  color: var(--text-color);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.footer ul li a:hove {
+  border-bottom: 3px solid var(--main-color);
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.copyright {
+  color: #FB7E1B;
+  border-radius: 8px;
+}
+/* final do footer */
+
+/* Responsividade */
+
+@media(max-width: 1285px) {
+  html {
+    font-size: 55%;
+  }
+  .services-container {
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
+  }
+
+
+
+
+
+
+  
+}
+  /* .services-info p{
+            font-size: 1.2rem;
+            font-weight: 70;
+            max-height: 100px;
+            line-height: 1.1;
+            margin: auto;}
+} */
+@media (max-width: 991px) {
+  header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  
+    
+  }
+
+.home .home-content {
+  margin-top: -22%;
+}
+
+.home .home-content h1{
+  font-size: 15px;
+  background: rgba(0, 0.1, 0.2, 0.3);
+}
+.home .home-content  p{
+  font-size: 15px;
+  align-items: center;
+  margin: 5%;
+  background: rgba(0, 0.1, 0.2, 0.3);
+}
+
+/* .home-content{
+  margin-bottom: 25%;} */
+.education{
+  justify-content: left;
+  background: rgba(0, 0.1, 0.2, 0.3);
+}
+  .timeline-items::before {
+    left: 7px;
+   
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+    
+  }
+  .timeline-dot {
+    left: 0;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+  /* .services-info p{
+            font-size: 2rem;
+            font-weight: 70;
+            max-height: 100px;
+            line-height: 1.1;
+            margin: auto;
+        } */
+
+  .projetos .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact form {
+    flex-direction: column;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+@media (max-width:895px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    /* background: rgba(0, 0.1, 0.2, 0.3); */ /* Fundo translúcido removido */
+    backdrop-filter: blur(20px); /* Pode ser removido ou ajustado, se necessário */
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+  .navbar .active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+  
+  
+  .home {
+    flex-direction: column-reverse;
+    margin: 25rem 2rem;
+    margin-top: -2rem;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+  .home-content p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .home-img img {
+    width: 76vw;
+  }
+  .services h2 {
+    margin-bottom: 3rem;
+    margin-left: -.10px;
+    text-align: start;
+    margin-right: 500px;
+    padding-left: 22%;
+  }
+
+  .services-info{
+    width: 80vw;
+    height: 250vh;
+    
+  }
+  .services-info h4{
+    font-size: 2.5rem;
+    line-height: 1;
+    gap: 1;
+  }
+  .services-info p {
+    font-size: 2.2rem;
+    font-weight: 200;
+    
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+  }
+  .timeline-item{
+   justify-content: left; 
+   padding: 0px 0px 0px 0px;
+   width: 90vw;
+  }
+  .education{
+    width: 1%;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9px, 1fr));
+    background-color: black;
+    color: #444;
+    padding-right: 150%;
+    padding-left: 1%;
+   
+  }
+
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn {
+    margin-bottom: 10px;
+    flex-direction: row;
+  }
+
+
+
+
+
+
+}
+.about {
+  min-height: 100vh;
+  padding: 6rem 6rem 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+}
+.about-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-sobre h2 {
+  font-family: "VT323", monospace;
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+  font-weight: 900;
+   font-size: 7.5rem;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  gap: 5rem;
+  color: #FB7E1B;
+}
+.about-sobre p {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  padding-bottom: 50%;
+}
+ol {
+  margin-bottom: 50px;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 22px;
+}
+
+.about-img {
+  padding-top: 350px;
+}
+.about-img img {
+  width: 300%;
+  float: left;
+  flex-direction: row;
+}
+
+/* 
+@media (max-width: 395px ) {
+  .services-info h4 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    max-height: 100px;
+    line-height: 1.1;
+  }
+  .services-info p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-height: 100px;
+    line-height: 1.1;
+    margin: auto;
+  }
+  #education {
+    
+    max-width: fit-content; 
+  justify-content: center;
+  
+  section {
+    padding: 0.1rem 1% 0.5rem;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 3px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+  .timeline-date {
+    padding-right: 10;
+    text-align: center;
+  }
+}  
+ */
+
+
+
+
+
+/* Define que a visibilidade dos elementos associados a essas classes será oculta (hidden). 
+   Isso significa que os elementos não serão visíveis, mas ainda ocuparão espaço no layout. */
+   .efeito-img-topo, 
+   .efeito-education, 
+   .efeito-services, 
+   .efeito-project, 
+   .efeitoprojeto1, 
+   .efeitoprojeto2, 
+   .efeitoprojeto3, 
+   .efeito-arvore1, 
+   .efeito-arvore2, 
+   .efeito-arvore3, 
+   .efeito-arvore4, 
+   .efeito-arvore5, 
+   .efeito-arvore6, 
+   .efeito-arvore7, 
+   .efeito-serv1, 
+   .efeito-serv2, 
+   .efeito-serv3, 
+   .efeito-serv4, 
+   .efeitocontato {
+       visibility: hidden; /* Torna os elementos invisíveis, mas ainda ocupam espaço. */
+   }
